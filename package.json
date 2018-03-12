@@ -1,0 +1,57 @@
+{
+  "name": "fast-password-entropy",
+  "version": "1.0.0",
+  "description": "Calculate the entropy of a password string, but fast!",
+  "keywords": [
+    "password",
+    "string",
+    "entropy",
+    "strength"
+  ],
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@bloq.com>",
+  "files": [
+    "src/*"
+  ],
+  "main": "src/index.js",
+  "repository": "autonomoussoftware/fast-password-entropy",
+  "scripts": {
+    "bench": "node benchmark/index.js",
+    "lint": "eslint --cache .",
+    "precommit": "npm run lint",
+    "test": "mocha",
+    "coverage": "nyc --lines 95 --functions 95 --branches 95 --reporter=lcov --reporter=text npm test",
+    "check": "npm-check -p -i eslint*",
+    "prepush": "npm run check && npm run coverage",
+    "prepublish": "npm run precommit && npm run prepush"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^4.0.0",
+    "eslint": "^4.1.0",
+    "eslint-config-bloq": "^1.0.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsdoc": "^3.5.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "microtime": "^2.1.7",
+    "mocha": "^5.0.1",
+    "npm-check": "^5.5.2",
+    "nyc": "^11.0.0",
+    "passwd-strength": "^1.1.0",
+    "password-entropy": "0.0.3",
+    "password-strength": "0.0.1",
+    "random-words": "^1.0.0",
+    "randomstring": "^1.1.5",
+    "string-entropy": "0.0.2",
+    "tai-password-strength": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "preferGlobal": false,
+  "private": false
+}

@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "bloq",
+    "plugin:jsdoc/recommended"
+  ],
+  "plugins": [
+    "jsdoc"
+  ]
+}
