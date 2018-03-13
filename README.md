@@ -1,4 +1,4 @@
-# fast-string-entropy
+# fast-password-entropy
 
 Calculate the entropy bits of a string as a quick proxy to password strength.
 
@@ -7,13 +7,13 @@ See [Entropy as a measure of password strength](https://en.wikipedia.org/wiki/Pa
 ## Installation
 
 ```bash
-$ npm install --save fast-string-entropy
+$ npm install --save fast-password-entropy
 ```
 
 ## Usage
 
 ```js
-const stringEntropy = require('fast-string-entropy')
+const stringEntropy = require('fast-password-entropy')
 
 console.log(stringEntropy('1234')) // 13
 console.log(stringEntropy('password')) // 38
@@ -54,19 +54,19 @@ Test strings [ '',
   'needle excitement over aloud price among',
   'topic contain anything political great thank dawn among butter doll fought end' ]
 
-Results for `fast-string-entropy`   [ 0, 13, 46, 95, 147, 235, 459 ]
+Results for `fast-password-entropy`   [ 0, 13, 46, 95, 147, 235, 459 ]
 Results for `passwd-strength`       [ 0, 13, 46, 95, 147, 235, 459 ]
 Results for `password-entropy`      [ 1, 1, 3, 10, 10, 10, 10 ]
 Results for `string-entropy`        [ 0, 13, 46, 95, 118, 188, 367 ]
 Results for `tai-password-strength` [ 0, 6, 24, 62, 87, 152, 312 ]
 
 Benchmarking...
-fast-string-entropy x 557,198 ops/sec ±1.27% (87 runs sampled)
+fast-password-entropy x 557,198 ops/sec ±1.27% (87 runs sampled)
 passwd-strength x 1,732 ops/sec ±4.36% (81 runs sampled)
 string-entropy x 143,412 ops/sec ±3.92% (83 runs sampled)
 tai-password-strength x 11,590 ops/sec ±1.28% (86 runs sampled)
 
-Fastest is fast-string-entropy
+Fastest is fast-password-entropy
 ```
 
 ## License

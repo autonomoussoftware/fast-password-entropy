@@ -23,7 +23,7 @@ const testStrings = [
 const strengthTester = new taiPasswordStrength.PasswordStrength()
 
 console.log('Test strings', testStrings, '\n')
-console.log('Results for `fast-string-entropy`  ',
+console.log('Results for `fast-password-entropy`  ',
   testStrings
     .map(fast)
 )
@@ -52,7 +52,7 @@ console.log('\nBenchmarking...')
 const suite = new Benchmark.Suite()
 
 suite
-  .add('fast-string-entropy', function () {
+  .add('fast-password-entropy', function () {
     testStrings.forEach(fast)
   })
   .add('passwd-strength', function () {
