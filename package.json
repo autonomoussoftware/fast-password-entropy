@@ -11,21 +11,26 @@
   "license": "MIT",
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
-    "src/*"
+    "dist",
+    "src"
   ],
   "main": "src/index.js",
+  "browser": "es5/index.js",
   "repository": "autonomoussoftware/fast-password-entropy",
   "scripts": {
     "bench": "node benchmark/index.js",
+    "build": "babel -d es5/ src/",
+    "check": "npm-check -p -i eslint*",
+    "coverage": "nyc --lines 95 --functions 95 --branches 95 --reporter=lcov --reporter=text npm test",
     "lint": "eslint --cache .",
     "precommit": "npm run lint",
-    "test": "mocha",
-    "coverage": "nyc --lines 95 --functions 95 --branches 95 --reporter=lcov --reporter=text npm test",
-    "check": "npm-check -p -i eslint*",
+    "prepublishOnly": "npm run build && npm run precommit && npm run prepush && tag-matches",
     "prepush": "npm run check && npm run coverage",
-    "prepublishOnly": "npm run precommit && npm run prepush && tag-matches"
+    "test": "mocha"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "benchmark": "^2.1.4",
     "chai": "^4.0.0",
     "check-tag-matches": "^1.0.0",
@@ -49,9 +54,6 @@
     "randomstring": "^1.1.5",
     "string-entropy": "0.0.2",
     "tai-password-strength": "^1.1.1"
-  },
-  "engines": {
-    "node": ">=6.0.0"
   },
   "preferGlobal": false,
   "private": false
