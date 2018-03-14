@@ -19,6 +19,14 @@ console.log(stringEntropy('1234')) // 13
 console.log(stringEntropy('password')) // 38
 ```
 
+### ES5 support
+
+A transpiled version is available in `es5/index.js`. To use that specific version, this syntax is also supported:
+
+```js
+var stringEntropy = require('fast-password-entropy/es5');
+```
+
 ## Research
 
 Several libraries were analyzed before creating this one. Some of those are listed below, along with the drawbacks found for each one.
