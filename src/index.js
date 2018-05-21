@@ -45,7 +45,7 @@ const stdCharsets = [{
  * Creates a function to calculate the total charset length of a string based on
  * the given charsets.
  *
- * @param  {[object]} charsets are description of each charset. Shall contain a
+ * @param  {Object[]} charsets are description of each charset. Shall contain a
  *                             regular expression `re` to identify each
  *                             character and a `length` with the total possible
  *                             characters in the set.
