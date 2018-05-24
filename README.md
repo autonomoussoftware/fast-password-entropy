@@ -2,10 +2,9 @@
 
 [![Build Status](https://travis-ci.org/autonomoussoftware/fast-password-entropy.svg?branch=master)](https://travis-ci.org/autonomoussoftware/fast-password-entropy)
 [![bitHound Overall Score](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy/badges/score.svg)](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy)
-[![bitHound Dependencies](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy/badges/dependencies.svg)](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy/badges/code.svg)](https://www.bithound.io/github/autonomoussoftware/fast-password-entropy)
 [![Code Style](https://img.shields.io/badge/code%20style-bloq-0063a6.svg)](https://github.com/bloq/eslint-config-bloq)
-[![Known Vulnerabilities](https://snyk.io/test/github/autonomoussoftware/fast-password-entropy:package.json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/autonomoussoftware/fast-password-entropy:package.json?targetFile=package.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/autonomoussoftware/fast-password-entropy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/autonomoussoftware/fast-password-entropy:package.json)
 
 Calculate the entropy bits of a string as a quick proxy to password strength.
 
