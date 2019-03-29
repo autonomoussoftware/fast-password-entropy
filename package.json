@@ -1,6 +1,6 @@
 {
   "name": "fast-password-entropy",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Calculate the entropy of a password string, but fast!",
   "keywords": [
     "password",
