@@ -47,7 +47,7 @@
     "microtime": "^3.0.0",
     "mocha": "^6.0.2",
     "npm-check": "^5.7.1",
-    "nyc": "^13.3.0",
+    "nyc": "^14.0.0",
     "passwd-strength": "^1.1.0",
     "password-entropy": "0.0.3",
     "password-strength": "0.0.1",
