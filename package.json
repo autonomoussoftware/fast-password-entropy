@@ -34,7 +34,7 @@
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "check-tag-matches": "^1.0.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-bloq": "^2.1.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
