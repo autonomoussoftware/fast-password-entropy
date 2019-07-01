@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-require-path-exists": "^1.1.9",
     "eslint-plugin-standard": "^4.0.0",
-    "husky": "^2.2.0",
+    "husky": "^3.0.0",
     "microtime": "^3.0.0",
     "mocha": "^6.1.4",
     "npm-check": "^5.9.0",
